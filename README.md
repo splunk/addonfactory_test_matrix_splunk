@@ -7,3 +7,4 @@ The format of this repository list a single conf file in the root 'splunk_matrix
 [8.0]
 VERSION=8.0.2
 ```
+# Additional notes
