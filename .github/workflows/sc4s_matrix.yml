@@ -1,7 +1,7 @@
 name: Check Package Version
 on:
   schedule:
-    - cron: "0 22 * * SAT"
+    - cron: "0 15 * * SAT"
 
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
           test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
           test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
           echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
-      - name: Run Test
+      - name: Update SC4S Version
         env:
           GITHUB_USER: ${{ secrets.GH_USER }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
