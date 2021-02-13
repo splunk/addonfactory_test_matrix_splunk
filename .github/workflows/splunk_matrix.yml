@@ -1,7 +1,7 @@
 name: Check Package Version
 on:
   schedule:
-    - cron: "0 15 * * SUN"
+    - cron: "0 03 * * SUN"
 
 jobs:
   build:
