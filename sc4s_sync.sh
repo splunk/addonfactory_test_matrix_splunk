@@ -18,7 +18,7 @@ else
     exit 1
 fi
 
-current_tag=$(cat sc4s_matrix.conf | grep -oP 'VERSION\s*=\s*([0-9\.]+)')
+current_tag=$(cat SC4S_matrix.conf | grep -oP 'VERSION\s*=\s*([0-9\.]+)')
 echo $current_tag
 re='VERSION\s*=\s*([0-9.]+)'
 if [[ $current_tag =~ $re ]]
