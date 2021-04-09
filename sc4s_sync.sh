@@ -45,7 +45,7 @@ then
     git config --global user.name "Addon Factory template"
     BRANCH=test/sc4s-version-update
     git checkout -b $BRANCH   
-    sed -i "s/$current_tag/$new_value/g" SC4S_matrix.conf
+    sed -i "s/$current_tag_value/$new_value/g" SC4S_matrix.conf
     git diff
     git add SC4S_matrix.conf
     git status
