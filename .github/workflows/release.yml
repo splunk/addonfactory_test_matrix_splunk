@@ -37,5 +37,8 @@ jobs:
                 prerelease: true
               }
             ]
+          extra_plugins: |
+            @semantic-release/changelog@3.0.0
+            @semantic-release/exec
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
