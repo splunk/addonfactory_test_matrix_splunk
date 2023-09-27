@@ -1,4 +1,9 @@
+# Deprecation Notice
+
+This repository is going to be deprecated soon, please don't use it. If you need to see what Splunk versions are available please check out [this repository](https://github.com/splunk/addonfactory-test-matrix-action) instead.
+
 # addonfactory_test_matrix_splunk
+
 This repository is used to control the specific versions of Splunk Docker used in add-on test matrix.
 
 The format of this repository list a single conf file in the root 'splunk_matrix.conf' with a stanza in the pattern of MAJOR.MINOR and a attribute VERSION=semver 
